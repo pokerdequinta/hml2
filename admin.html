@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — Poker de Quinta 2027</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body { padding: 24px; font-family: 'Space Grotesk', sans-serif; background: #1a2e1f; color: #f8faf8; }
+    .admin-container { max-width: 1000px; margin: 0 auto; }
+    h1 { color: #e0b13a; }
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+    th, td { padding: 10px; border-bottom: 1px solid rgba(212,161,33,.18); text-align: left; }
+    th { color: #f5d472; font-weight: 600; }
+    input[type="text"], input[type="url"] {
+      width: 100%; padding: 8px 10px; border-radius: 8px;
+      border: 1px solid rgba(212,161,33,.35);
+      background: #223a28; color: #f8faf8; font: inherit;
+    }
+    button {
+      padding: 10px 20px; border-radius: 999px; border: 0;
+      background: linear-gradient(135deg,#e0b13a,#f5d472);
+      color: #1a2e1f; font-weight: 600; cursor: pointer;
+      margin-top: 16px;
+    }
+    button:hover { opacity: .9; }
+    .avatar-preview { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #33503a; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #5fbf6f; color: #1a2e1f; padding: 10px 20px; border-radius: 999px; font-weight: 600; opacity: 0; transition: opacity .3s; }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Admin — Jogadores</h1>
+    <p>Edite o nome e a URL da foto. As alterações são salvas no navegador (localStorage).</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Foto</th>
+          <th>Nome</th>
+          <th>URL da foto</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="admin-rows"></tbody>
+    </table>
+
+    <button id="save-all">Salvar todas as alterações</button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // Carrega os dados padrão (ou do localStorage)
+    const STORAGE_KEY = "pq2027_players";
+
+    function loadPlayers() {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) return JSON.parse(stored);
+      // Fallback: usa os dados do data.js (certifique-se de que data.js está carregado)
+      return typeof players !== "undefined" ? players : [];
+    }
+
+    function renderRows() {
+      const list = loadPlayers();
+      const tbody = document.getElementById("admin-rows");
+      tbody.innerHTML = list.map((p, i) => `
+        <tr data-index="${i}">
+          <td>${i + 1}</td>
+          <td><img class="avatar-preview" src="${p.photo || ''}" alt="" onerror="this.style.display='none'"></td>
+          <td><input type="text" class="input-name" value="${p.name.replace(/"/g, '&quot;')}"></td>
+          <td><input type="url" class="input-photo" value="${p.photo || ''}" placeholder="https://..."></td>
+          <td><button class="btn-save" data-index="${i}">Salvar</button></td>
+        </tr>
+      `).join("");
+
+      document.querySelectorAll(".btn-save").forEach(btn => {
+        btn.addEventListener("click", () => saveRow(parseInt(btn.dataset.index)));
+      });
+    }
+
+    function saveRow(index) {
+      const list = loadPlayers();
+      const row = document.querySelector(`tr[data-index="${index}"]`);
+      if (!row) return;
+      const name = row.querySelector(".input-name").value.trim();
+      const photo = row.querySelector(".input-photo").value.trim();
+      if (!name) { showToast("O nome não pode ficar vazio."); return; }
+      list[index].name = name;
+      list[index].photo = photo;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      showToast("Jogador atualizado!");
+      renderRows(); // recarrega a tabela
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.classList.add("show");
+      setTimeout(() => t.classList.remove("show"), 2500);
+    }
+
+    document.getElementById("save-all").addEventListener("click", () => {
+      const list = loadPlayers();
+      document.querySelectorAll("tr[data-index]").forEach(row => {
+        const idx = parseInt(row.dataset.index);
+        const name = row.querySelector(".input-name").value.trim();
+        const photo = row.querySelector(".input-photo").value.trim();
+        if (name) {
+          list[idx].name = name;
+          list[idx].photo = photo;
+        }
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      showToast("Todas as alterações salvas!");
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Carrega data.js para ter os dados padrão
+      if (typeof players === "undefined") {
+        const script = document.createElement("script");
+        script.src = "js/data.js";
+        script.onload = () => renderRows();
+        document.body.appendChild(script);
+      } else {
+        renderRows();
+      }
+    });
+  </script>
+</body>
+</html>
