@@ -1,572 +1,148 @@
 /* ============================================================
-   POKER DE QUINTA — TEMPORADA 2027
-   Dados editáveis do site (etapas, ranking, loja e temporadas)
+   DADOS — POKER DE QUINTA 2027
+   Jogadores e pontos baseados no ranking oficial
    ============================================================ */
 
-window.PQ_DATA = {
-  site: {
-    name: "Poker de Quinta",
-    season: "2027",
-    tagline: "12 etapas. Uma mesa. Um trono.",
-    description:
-      "O circuito de poker amador que transforma toda primeira quinta do mês em uma noite memorável. Temporada 2027 — Casa Palmeira, São Paulo.",
-    whatsapp: "5511999992027",
-    whatsappDisplay: "(11) 99999-2027",
-    email: "contato@pokerdequinta.com.br",
-    instagramHandle: "@pokerdequinta",
-    instagramUrl: "https://www.instagram.com/",
-    logo: "logo%20pdq.png",
-    confirmUrl: "https://pokerdequinta.github.io/confirma/",
-    address: "Rua Harmonia, 321 — Vila Madalena",
-    city: "São Paulo — SP",
-    venue: "Casa Palmeira",
-    mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Rua+Harmonia+321+Vila+Madalena+Sao+Paulo",
-    buyIn: "R$ 650",
-    buyInDetail: "R$ 600 buy-in + R$ 50 taxa da casa",
-    guarantee: "R$ 10.000",
-    stack: "30.000",
-    blinds: "20 min",
-    capacity: 16,
-    levels: "Níveis de 20 minutos",
-    seasonPrize: "R$ 120.000",
-    rankingUpdatedAfter: 8,
-    nextStageId: 9,
-    seasonStart: "2027-02-04T20:00:00-03:00",
-    seasonEnd: "2027-12-16T20:00:00-03:00",
-  },
-
-  /* Pontuação oficial: posição final na etapa. */
-  pointsByPosition: [650, 440, 330, 260, 210, 170, 140, 120, 100, 80, 65, 50, 30, 30, 30, 30],
-
-  /* Premiação: percentuais do prize pool para a mesa final. */
-  payoutPercentages: [30, 20, 14, 10, 8, 7, 6, 5],
-
-  players: [
-    {
-      id: "p01",
-      name: "Camila Duarte",
-      photo: "",
-      nickname: "Camila",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2021,
-      bio: "Paciência de quem já viu muitas mesas. Camila transforma posição e leitura em pressão silenciosa.",
-      best: "Campeã da Temporada 2026",
-    },
-    {
-      id: "p02",
-      name: "Rafael Nogueira",
-      photo: "",
-      nickname: "Rafa",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2019,
-      bio: "Um dos fundadores da casa. Gosta de potes grandes, decisões difíceis e de um bom bluff no river.",
-      best: "Campeão da Temporada 2025",
-    },
-    {
-      id: "p03",
-      name: "Thiago Bernardes",
-      photo: "",
-      nickname: "Thiago",
-      city: "Rio de Janeiro",
-      uf: "RJ",
-      since: 2020,
-      bio: "Veio do Rio para jogar a primeira temporada e nunca mais faltou. Referência em estrutura e ICM.",
-      best: "Campeão da Temporada 2024",
-    },
-    {
-      id: "p04",
-      name: "Marina Prado",
-      photo: "",
-      nickname: "Marina",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2022,
-      bio: "Agressiva na medida certa. Marina acumula mesas finais e é conhecida pelas viradas improváveis.",
-      best: "Campeã da Temporada 2023",
-    },
-    {
-      id: "p05",
-      name: "Eduardo Lima",
-      photo: "",
-      nickname: "Dudu",
-      city: "Belo Horizonte",
-      uf: "MG",
-      since: 2020,
-      bio: "Mineiro de fala mansa e jogo direto. Quando Dudu aumenta, a mesa inteira recalcula.",
-      best: "Campeão da Etapa 06 de 2027",
-    },
-    {
-      id: "p06",
-      name: "João Pedro Alves",
-      photo: "",
-      nickname: "JP",
-      city: "Curitiba",
-      uf: "PR",
-      since: 2023,
-      bio: "Representa a nova geração da casa. Estudo, frequência e uma capacidade rara de não tiltar.",
-      best: "Campeão da Etapa 08 de 2027",
-    },
-    {
-      id: "p07",
-      name: "Beatriz Campos",
-      photo: "",
-      nickname: "Bia",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2022,
-      bio: "Especialista em jogar curtos. Bia já virou stack pequeno em final table mais de uma vez.",
-      best: "4ª colocada na Etapa 02 de 2027",
-    },
-    {
-      id: "p08",
-      name: "Lucas Ferraz",
-      photo: "",
-      nickname: "Lucas",
-      city: "Campinas",
-      uf: "SP",
-      since: 2023,
-      bio: "O mais técnico da turma. Anota mãos, revisa spots e sempre tem uma pergunta boa depois do torneio.",
-      best: "4º lugar na Etapa 07 de 2027",
-    },
-    {
-      id: "p09",
-      name: "Helena Rios",
-      photo: "",
-      nickname: "Helena",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2021,
-      bio: "Mesa final é praticamente endereço fixo. Helena combina disciplina e um timing difícil de explicar.",
-      best: "4º lugar na Etapa 05 de 2027",
-    },
-    {
-      id: "p10",
-      name: "André Salles",
-      photo: "",
-      nickname: "André",
-      city: "Santos",
-      uf: "SP",
-      since: 2024,
-      bio: "Vem de Santos para cada etapa. Jogo sólido, conversa boa e uma coleção de bad beats para contar.",
-      best: "8º lugar na Etapa 08 de 2027",
-    },
-    {
-      id: "p11",
-      name: "Bruno Tavares",
-      photo: "",
-      nickname: "Bruno",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2022,
-      bio: "O homem das linhas improváveis. Bruno não tem medo de colocar pressão quando a mesa hesita.",
-      best: "11º lugar na Etapa 08 de 2027",
-    },
-    {
-      id: "p12",
-      name: "Isabela Monte",
-      photo: "",
-      nickname: "Isa",
-      city: "Florianópolis",
-      uf: "SC",
-      since: 2023,
-      bio: "Joga todas as quintas que consegue. Isabela é consistência pura e uma das vozes mais queridas da casa.",
-      best: "11ª colocada na Etapa 08 de 2027",
-    },
-    {
-      id: "p13",
-      name: "Caio Ribeiro",
-      photo: "",
-      nickname: "Caio",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2024,
-      bio: "Aprendeu a jogar na casa e hoje é sócio da mesa. Ainda busca a primeira mesa final da temporada.",
-      best: "13º lugar na Etapa 08 de 2027",
-    },
-    {
-      id: "p14",
-      name: "Renata Vale",
-      photo: "",
-      nickname: "Renata",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2024,
-      bio: "Chegou pela comunidade e virou presença certa. Renata joga com calma e faz perguntas certeiras.",
-      best: "13ª colocada na Etapa 07 de 2027",
-    },
-    {
-      id: "p15",
-      name: "Pedro Assis",
-      photo: "",
-      nickname: "Pedro",
-      city: "Sorocaba",
-      uf: "SP",
-      since: 2023,
-      bio: "Fã de torneios longos e de uma boa conversa na mesa. Pedro é o primeiro a chegar e o último a sair.",
-      best: "13º lugar na Etapa 03 de 2027",
-    },
-    {
-      id: "p16",
-      name: "Nando Castro",
-      photo: "",
-      nickname: "Nando",
-      city: "São Paulo",
-      uf: "SP",
-      since: 2021,
-      bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
-      best: "15º lugar na Etapa 08 de 2027",
-    },
-  ],
-
-  stages: [
-    {
-      id: 1,
-      slug: "mesa-da-abertura",
-      name: "A Mesa da Abertura",
-      kicker: "A abertura da temporada",
-      theme: "Abertura",
-      description:
-        "A primeira mão da temporada. Mesa cheia, fichas novas e a promessa de que este ano ninguém vai dar desconto.",
-      date: "2027-02-04T20:00:00-03:00",
-      status: "completed",
-      motif: "spade",
-      rank: "A",
-      suit: "♠",
-      accent: "#f5d472",
-      tone: "gold",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p02", "p01", "p04", "p07", "p03", "p05", "p09", "p06", "p10", "p08", "p12", "p11", "p13", "p14", "p15", "p16"],
-    },
-    {
-      id: 2,
-      slug: "noite-dos-ases",
-      name: "Noite dos Ases",
-      kicker: "Edição noturna",
-      theme: "Noite dos Ases",
-      description:
-        "Luz baixa, música certa e uma estrutura pensada para quem gosta de jogar no detalhe. A noite em que os ases saem do baralho — e da manga.",
-      date: "2027-03-04T20:00:00-03:00",
-      status: "completed",
-      motif: "heart",
-      rank: "A",
-      suit: "♥",
-      accent: "#7fb5ff",
-      tone: "sky",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p01", "p02", "p05", "p07", "p03", "p04", "p08", "p09", "p06", "p10", "p11", "p12", "p14", "p13", "p16", "p15"],
-    },
-    {
-      id: 3,
-      slug: "o-classico",
-      name: "O Clássico",
-      kicker: "A etapa que consagrou a casa",
-      theme: "Clássico",
-      description:
-        "O formato que consagrou a casa: campo profundo, blinds cadenciados e espaço para o poker de verdade acontecer.",
-      date: "2027-04-01T20:00:00-03:00",
-      status: "completed",
-      motif: "diamond",
-      rank: "K",
-      suit: "♦",
-      accent: "#ff8a8a",
-      tone: "rose",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p03", "p04", "p02", "p01", "p06", "p09", "p07", "p08", "p05", "p10", "p12", "p11", "p15", "p13", "p14", "p16"],
-    },
-    {
-      id: 4,
-      slug: "a-virada",
-      name: "A Virada",
-      kicker: "A noite das viradas",
-      theme: "A Virada",
-      description:
-        "Uma mesa que perdoa o erro — mas não a falta de coragem. A Virada é a etapa em que ninguém desiste até a última ficha.",
-      date: "2027-05-06T20:00:00-03:00",
-      status: "completed",
-      motif: "club",
-      rank: "Q",
-      suit: "♣",
-      accent: "#7fd38a",
-      tone: "jade",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p04", "p01", "p02", "p06", "p05", "p03", "p07", "p09", "p08", "p10", "p11", "p12", "p13", "p14", "p16", "p15"],
-    },
-    {
-      id: 5,
-      slug: "batida-de-ouro",
-      name: "Batida de Ouro",
-      kicker: "Edição especial",
-      theme: "Batida de Ouro",
-      description:
-        "Edição especial com mesa final no salão principal e premiação extra para o melhor bluff da noite.",
-      date: "2027-06-03T20:00:00-03:00",
-      status: "completed",
-      motif: "spade",
-      rank: "J",
-      suit: "♠",
-      accent: "#f5d472",
-      tone: "gold",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p02", "p05", "p01", "p09", "p03", "p04", "p08", "p07", "p10", "p06", "p11", "p12", "p14", "p13", "p15", "p16"],
-    },
-    {
-      id: 6,
-      slug: "meia-temporada",
-      name: "Meia Temporada",
-      kicker: "Metade do caminho",
-      theme: "Meia Temporada",
-      description:
-        "Metade do caminho, ranking apertado. Quem quer o trono precisa mostrar consistência agora.",
-      date: "2027-07-01T20:00:00-03:00",
-      status: "completed",
-      motif: "heart",
-      rank: "10",
-      suit: "♥",
-      accent: "#ffab6b",
-      tone: "ember",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p05", "p03", "p01", "p04", "p06", "p02", "p07", "p10", "p08", "p09", "p12", "p11", "p13", "p15", "p14", "p16"],
-    },
-    {
-      id: 7,
-      slug: "repique-de-reis",
-      name: "Repique de Reis",
-      kicker: "Noite dos campeões",
-      theme: "Repique de Reis",
-      description:
-        "Uma noite dedicada aos reis: bounty em dobro para quem eliminar um campeão de etapa.",
-      date: "2027-08-05T20:00:00-03:00",
-      status: "completed",
-      motif: "diamond",
-      rank: "K",
-      suit: "♦",
-      accent: "#a7e8bf",
-      tone: "jade",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p01", "p02", "p06", "p08", "p03", "p07", "p04", "p09", "p05", "p10", "p11", "p12", "p14", "p13", "p16", "p15"],
-    },
-    {
-      id: 8,
-      slug: "noite-de-instinto",
-      name: "Noite de Instinto",
-      kicker: "Fichas no ar",
-      theme: "Instinto",
-      description:
-        "Fichas voando, decisões em segundos e a pressão de quem precisa de pontos. O teste definitivo de instinto.",
-      date: "2027-09-02T20:00:00-03:00",
-      status: "completed",
-      motif: "club",
-      rank: "Q",
-      suit: "♣",
-      accent: "#6fe0d0",
-      tone: "sky",
-      entries: 16,
-      prizePool: 10000,
-      results: ["p06", "p03", "p02", "p05", "p01", "p04", "p07", "p10", "p09", "p08", "p12", "p11", "p13", "p14", "p15", "p16"],
-    },
-    {
-      id: 9,
-      slug: "mesa-dos-tubaroes",
-      name: "Mesa dos Tubarões",
-      kicker: "A etapa mais seletiva do ano",
-      theme: "Tubarões",
-      description:
-        "A noite em que a casa aperta o cerco: leitura afiada, pouca conversa e cada decisão cobra o preço. A etapa mais seletiva do calendário — e a favorita de quem gosta de pressão.",
-      date: "2027-10-07T20:00:00-03:00",
-      status: "next",
-      motif: "spade",
-      rank: "A",
-      suit: "♠",
-      accent: "#f5d472",
-      tone: "gold",
-      entries: 16,
-      prizePool: 10000,
-      results: [],
-    },
-    {
-      id: 10,
-      slug: "classico-de-outono",
-      name: "Clássico de Outono",
-      kicker: "Estrutura deepstack",
-      theme: "Clássico de Outono",
-      description:
-        "O clássico de outono volta com estrutura deepstack e jantar da casa para todos os jogadores.",
-      date: "2027-11-04T20:00:00-03:00",
-      status: "upcoming",
-      motif: "heart",
-      rank: "J",
-      suit: "♥",
-      accent: "#ffab6b",
-      tone: "ember",
-      entries: 16,
-      prizePool: 10000,
-      results: [],
-    },
-    {
-      id: 11,
-      slug: "ultima-cartada",
-      name: "Última Cartada",
-      kicker: "A penúltima chance",
-      theme: "Última Cartada",
-      description:
-        "A penúltima chance de mudar o ranking antes da final. Aqui, cada ficha pesa o dobro.",
-      date: "2027-12-02T20:00:00-03:00",
-      status: "upcoming",
-      motif: "diamond",
-      rank: "10",
-      suit: "♦",
-      accent: "#8bb9ff",
-      tone: "sky",
-      entries: 16,
-      prizePool: 10000,
-      results: [],
-    },
-    {
-      id: 12,
-      slug: "grande-final",
-      name: "Grande Final",
-      kicker: "O título da temporada",
-      theme: "Grande Final",
-      description:
-        "Os 8 melhores da temporada se enfrentam pelo título. Mesa final, troféu e o nome na parede da casa.",
-      date: "2027-12-16T20:00:00-03:00",
-      status: "final",
-      motif: "trophy",
-      rank: "A",
-      suit: "♠",
-      accent: "#ffd76e",
-      tone: "gold",
-      entries: 8,
-      prizePool: 20000,
-      results: [],
-    },
-  ],
-
-  pastSeasons: [
-    {
-      year: 2026,
-      championId: "p01",
-      runnerUpId: "p02",
-      thirdId: "p03",
-      points: "4.120",
-      stages: 12,
-      prizePool: "R$ 118.400",
-      note: "A temporada mais disputada da história da casa terminou com Camila e Rafa separados por 140 pontos.",
-    },
-    {
-      year: 2025,
-      championId: "p02",
-      runnerUpId: "p04",
-      thirdId: "p05",
-      points: "3.980",
-      stages: 12,
-      prizePool: "R$ 104.800",
-      note: "Rafa dominou a segunda metade do ano e selou o bicampeonato na última etapa.",
-    },
-    {
-      year: 2024,
-      championId: "p03",
-      runnerUpId: "p01",
-      thirdId: "p06",
-      points: "3.720",
-      stages: 10,
-      prizePool: "R$ 86.000",
-      note: "Primeira temporada com ranking completo e final transmitida para a comunidade.",
-    },
-    {
-      year: 2023,
-      championId: "p04",
-      runnerUpId: "p02",
-      thirdId: "p09",
-      points: "3.480",
-      stages: 8,
-      prizePool: "R$ 62.400",
-      note: "A temporada que colocou o Poker de Quinta no mapa dos circuitos amadores de São Paulo.",
-    },
-  ],
-
-  shop: [
-    {
-      id: "camisa-2027",
-      name: "Camisa Oficial 2027",
-      category: "Vestuário",
-      price: 159.9,
-      description:
-        "A camisa da temporada em algodão pima, com escudo bordado em dourado e etiqueta numerada.",
-      details: ["100% algodão pima", "Bordado dourado", "Modelagem unissex"],
-      badge: "Novo",
-      sizes: ["P", "M", "G", "GG"],
-      art: "shirt",
-    },
-    {
-      id: "baralho-da-casa",
-      name: "Baralho da Casa",
-      category: "Acessórios",
-      price: 89.9,
-      description:
-        "Baralho duplo com acabamento air-cushion, verso exclusivo da temporada e estojo rígido.",
-      details: ["54 cartas", "Acabamento air-cushion", "Estojo rígido incluso"],
-      badge: "Edição limitada",
-      sizes: [],
-      art: "deck",
-    },
-    {
-      id: "bone-signature",
-      name: "Boné Signature",
-      category: "Vestuário",
-      price: 79.9,
-      description:
-        "Boné de seis gomos em sarja, com spade metálico aplicado na frente e fecho ajustável.",
-      details: ["Sarja premium", "Spade metálico", "Tamanho único ajustável"],
-      badge: "",
-      sizes: [],
-      art: "cap",
-    },
-    {
-      id: "copo-all-in",
-      name: 'Copo "All-in"',
-      category: "Casa",
-      price: 49.9,
-      description:
-        "Copo de vidro cristal com gravação a laser. Para brindar a virada — ou aceitar o bad beat.",
-      details: ["Vidro cristal", "Gravação a laser", "Capacidade 320 ml"],
-      badge: "",
-      sizes: [],
-      art: "glass",
-    },
-    {
-      id: "poster-temporada",
-      name: "Pôster da Temporada",
-      category: "Casa",
-      price: 39.9,
-      description:
-        "O calendário 2027 impresso em papel algodão, com acabamento fosco e tipografia dourada.",
-      details: ["Formato A3", "Papel algodão 300g", "Enviado em tubo"],
-      badge: "",
-      sizes: [],
-      art: "poster",
-    },
-    {
-      id: "bag-de-feltro",
-      name: "Bag de Feltro",
-      category: "Acessórios",
-      price: 119.9,
-      description:
-        "Bolsa em feltro verde com forro interno, alça de couro e espaço para baralho e fichas.",
-      details: ["Feltro premium", "Alça de couro", "Forro interno"],
-      badge: "Últimas unidades",
-      sizes: [],
-      art: "bag",
-    },
-  ],
+const site = {
+  whatsapp: "5511999999999", // troque pelo número real
+  instagram: "https://www.instagram.com/pokerdequinta",
+  email: "contato@pokerdequinta.com.br",
+  address: "Rua Harmonia, 321 — Vila Madalena, São Paulo/SP",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rua+Harmonia+321+Vila+Madalena+Sao+Paulo"
 };
+
+/* ------------------------------------------------------------
+   JOGADORES (ordem do ranking oficial)
+   ------------------------------------------------------------ */
+const players = [
+  { id: "p01", name: "Sergio",          photo: "", nickname: "Sergio",          city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p02", name: "Gaspar",          photo: "", nickname: "Gaspar",          city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p03", name: "Cleversson",      photo: "", nickname: "Cleversson",      city: "São Paulo", uf: "SP", since: 2021, bio: "", best: "" },
+  { id: "p04", name: "Robson",          photo: "", nickname: "Robson",          city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p05", name: "Loreto",          photo: "", nickname: "Loreto",          city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p06", name: "Solano",          photo: "", nickname: "Solano",          city: "São Paulo", uf: "SP", since: 2020, bio: "", best: "" },
+  { id: "p07", name: "Jean",            photo: "", nickname: "Jean",            city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p08", name: "Van Van",         photo: "", nickname: "Van Van",         city: "São Paulo", uf: "SP", since: 2022, bio: "", best: "" },
+  { id: "p09", name: "Neto",            photo: "", nickname: "Neto",            city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p10", name: "Matheus",         photo: "", nickname: "Matheus",         city: "São Paulo", uf: "SP", since: 2020, bio: "", best: "" },
+  { id: "p11", name: "Ricardo Matoso",  photo: "", nickname: "R. Matoso",       city: "São Paulo", uf: "SP", since: 2021, bio: "", best: "" },
+  { id: "p12", name: "Maykon",          photo: "", nickname: "Maykon",          city: "São Paulo", uf: "SP", since: 2020, bio: "", best: "" },
+  { id: "p13", name: "Guti",            photo: "", nickname: "Guti",            city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p14", name: "Rafael",          photo: "", nickname: "Rafael",          city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p15", name: "Izidio",          photo: "", nickname: "Izidio",          city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p16", name: "Diego",           photo: "", nickname: "Diego",           city: "São Paulo", uf: "SP", since: 2021, bio: "", best: "" },
+  { id: "p17", name: "Jean Rebuy",      photo: "", nickname: "Jean R.",         city: "São Paulo", uf: "SP", since: 2020, bio: "", best: "" },
+  { id: "p18", name: "Buiu",            photo: "", nickname: "Buiu",            city: "São Paulo", uf: "SP", since: 2022, bio: "", best: "" },
+  { id: "p19", name: "Ricardo Linhares",photo: "", nickname: "R. Linhares",     city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p20", name: "Amarildo",        photo: "", nickname: "Amarildo",        city: "São Paulo", uf: "SP", since: 2020, bio: "", best: "" },
+  { id: "p21", name: "Daniel",          photo: "", nickname: "Daniel",          city: "São Paulo", uf: "SP", since: 2023, bio: "", best: "" },
+  { id: "p22", name: "Boy",             photo: "", nickname: "Boy",             city: "São Paulo", uf: "SP", since: 2019, bio: "", best: "" },
+  { id: "p23", name: "Marcelo",         photo: "", nickname: "Marcelo",         city: "São Paulo", uf: "SP", since: 2021, bio: "", best: "" },
+  { id: "p24", name: "Gera",            photo: "", nickname: "Gera",            city: "São Paulo", uf: "SP", since: 2020, bio: "", best: "" },
+  { id: "p25", name: "Ricardo Amarante",photo: "", nickname: "R. Amarante",     city: "São Paulo", uf: "SP", since: 2020, bio: "", best: "" },
+  { id: "p26", name: "Tonimar",         photo: "", nickname: "Tonimar",         city: "São Paulo", uf: "SP", since: 2023, bio: "", best: "" },
+  { id: "p27", name: "Tigre",           photo: "", nickname: "Tigre",           city: "São Paulo", uf: "SP", since: 2021, bio: "", best: "" },
+  { id: "p28", name: "Dos Anjos",       photo: "", nickname: "Dos Anjos",       city: "São Paulo", uf: "SP", since: 2021, bio: "", best: "" },
+  { id: "p29", name: "Michel",          photo: "", nickname: "Michel",          city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p30", name: "Roberto",         photo: "", nickname: "Roberto",         city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p31", name: "Matheus Cunha",   photo: "", nickname: "M. Cunha",        city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p32", name: "Rafael Rosa",     photo: "", nickname: "R. Rosa",         city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p33", name: "Junior",          photo: "", nickname: "Junior",          city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p34", name: "Deko",            photo: "", nickname: "Deko",            city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p35", name: "Denir",           photo: "", nickname: "Denir",           city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p36", name: "Gregory",         photo: "", nickname: "Gregory",         city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p37", name: "Michel (2)",      photo: "", nickname: "Michel",          city: "São Paulo", uf: "SP", since: 2024, bio: "", best: "" },
+  { id: "p38", name: "Kastelo",         photo: "", nickname: "Kastelo",         city: "São Paulo", uf: "SP", since: 2021, bio: "", best: "" }
+];
+
+/* ------------------------------------------------------------
+   PONTOS POR ETAPA (extraídos do ranking-live.json)
+   Cada linha = array de 12 posições (etapas 1 a 12).
+   "NJ" e "-" → 0 pontos. Valores negativos = penalidade.
+   ------------------------------------------------------------ */
+const stagePoints = {
+  p01: [31, 28, 7, 31, 22, 5, 34, 5, 5, 28, 26, 0],      // Sergio
+  p02: [5, 5, 5, 7, 6, 32, 15, 13, 22, 38, 33, 0],        // Gaspar
+  p03: [5, 23, 5, 5, 20, 28, 5, 29, 31, 22, 7, 0],        // Cleversson
+  p04: [26, 20, 31, 13, 5, 5, 27, 6, 11, 17, 16, 0],      // Robson
+  p05: [0, 33, 23, 18, 7, 5, 21, 22, 16, 5, 14, 0],       // Loreto
+  p06: [28, 18, 24, 0, 0, 22, 19, 9, 29, 5, 0, 0],        // Solano
+  p07: [5, 19, 5, 28, 15, 7, 5, 32, 0, 25, 6, 0],         // Jean
+  p08: [13, 5, 23, 19, 14, 5, 6, 16, 17, 12, 5, 0],       // Van Van
+  p09: [22, 5, 31, 22, 16, 6, 0, 5, 7, 15, 5, 0],         // Neto
+  p10: [20, 0, 18, 5, 18, 15, 9, 5, 26, 7, 5, 0],         // Matheus
+  p11: [7, 6, 9, 9, 28, 21, 26, 5, 5, 5, 0, 0],           // Ricardo Matoso
+  p12: [11, 25, 5, 5, 5, 20, 5, 5, 14, 0, 17, 0],         // Maykon
+  p13: [5, 5, 5, 27, 5, 9, 7, 12, 0, 22, 5, 0],           // Guti
+  p14: [0, 0, 5, 5, 33, 12, 5, 25, 6, 5, 0, 0],           // Rafael
+  p15: [9, 6, 8, 5, 5, 6, 5, 19, 21, 5, 0, 0],            // Izidio
+  p16: [0, 0, 0, 7, 27, 27, 5, 0, 5, 13, 0, 0],           // Diego
+  p17: [5, 8, 13, 14, 5, 0, 16, 8, 8, 0, 5, 0],           // Jean Rebuy
+  p18: [0, 0, 0, 5, 11, 15, 0, 23, 0, 0, 22, 0],          // Buiu
+  p19: [5, 12, 5, 5, 5, 5, 0, 0, 5, 10, 10, 0],           // Ricardo Linhares
+  p20: [22, 5, 0, 0, 5, 0, 0, 0, 0, 0, 27, 0],            // Amarildo
+  p21: [0, 0, 0, 0, 0, 0, 13, 0, 5, 0, 25, 0],            // Daniel
+  p22: [7, 13, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0],            // Boy
+  p23: [0, 0, 16, 0, 0, 0, 0, 5, 0, 0, 5, 0],             // Marcelo
+  p24: [0, 5, 0, 0, 0, 5, 5, 0, 0, 5, 5, 0],              // Gera
+  p25: [5, 5, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0],              // Ricardo Amarante
+  p26: [0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0],             // Tonimar
+  p27: [0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0],             // Tigre
+  p28: [17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],             // Dos Anjos
+  p29: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0],             // Michel
+  p30: [0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0],             // Roberto
+  p31: [0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 0, 0],              // Matheus Cunha
+  p32: [0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 5, 0],              // Rafael Rosa
+  p33: [0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0],              // Junior
+  p34: [0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0],              // Deko
+  p35: [0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0],              // Denir
+  p36: [0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0],              // Gregory
+  p37: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],              // Michel (2)
+  p38: [5, 9, -90, 0, 0, 0, 0, 0, 0, 0, 0, 0]             // Kastelo
+};
+
+/* ------------------------------------------------------------
+   ETAPAS (12 etapas, a primeira em 28/01/2027)
+   ------------------------------------------------------------ */
+const stages = [
+  { n: 1,  date: "2027-01-28T20:00:00-03:00", name: "Etapa 01 — Abertura",        kicker: "O pontapé da temporada",        description: "A primeira quinta de 2027 abre a corrida pelo trono.", status: "completed", championId: "p01" },
+  { n: 2,  date: "2027-02-25T20:00:00-03:00", name: "Etapa 02 — Noite de Reis",    kicker: "Estratégia e blefe",             description: "A mesa esquenta no segundo encontro do ano.",       status: "completed", championId: "p05" },
+  { n: 3,  date: "2027-03-25T20:00:00-03:00", name: "Etapa 03 — Mesa Cheia",       kicker: "Casa lotada",                    description: "16 cadeiras, 16 histórias. A temporada ganha corpo.", status: "completed", championId: "p09" },
+  { n: 4,  date: "2027-04-29T20:00:00-03:00", name: "Etapa 04 — Virada de Chave",  kicker: "O jogo vira",                    description: "Quem estava atrás começa a reagir.",               status: "completed", championId: "p01" },
+  { n: 5,  date: "2027-05-27T20:00:00-03:00", name: "Etapa 05 — All-In",           kicker: "Decisões radicais",              description: "A etapa dos all-ins históricos.",                  status: "completed", championId: "p14" },
+  { n: 6,  date: "2027-06-24T20:00:00-03:00", name: "Etapa 06 — Meio de Temporada", kicker: "Balanço da corrida",            description: "Metade do caminho, ranking embolado.",            status: "completed", championId: "p02" },
+  { n: 7,  date: "2027-07-29T20:00:00-03:00", name: "Etapa 07 — Noite dos Tubarões", kicker: "Os favoritos aparecem",        description: "A elite da casa mostra por que está no topo.",     status: "completed", championId: "p01" },
+  { n: 8,  date: "2027-08-26T20:00:00-03:00", name: "Etapa 08 — Reta Final",       kicker: "Cada ponto importa",             description: "A pressão aumenta a cada mão.",                    status: "completed", championId: "p07" },
+  { n: 9,  date: "2027-09-30T20:00:00-03:00", name: "Etapa 09 — Mesa dos Campeões", kicker: "Confronto de gigantes",        description: "Os campeões da temporada se enfrentam.",           status: "completed", championId: "p03" },
+  { n: 10, date: "2027-10-28T20:00:00-03:00", name: "Etapa 10 — Sprint Final",     kicker: "Rumo à Grande Final",            description: "A disputa por uma vaga na final esquenta.",        status: "completed", championId: "p02" },
+  { n: 11, date: "2027-11-25T20:00:00-03:00", name: "Etapa 11 — Última Chance",    kicker: "Tudo ou nada",                   description: "A última etapa antes da grande decisão.",          status: "completed", championId: "p02" },
+  { n: 12, date: "2027-12-16T20:00:00-03:00", name: "Etapa 12 — Grande Final",     kicker: "O trono em jogo",                description: "Os oito melhores disputam o título da temporada.", status: "upcoming",  championId: null }
+];
+
+/* ------------------------------------------------------------
+   LOJA (mantida como estava — ajuste se necessário)
+   ------------------------------------------------------------ */
+const shop = [
+  { id: "s01", name: "Camisa oficial 2027", category: "Vestuário", price: 129, description: "Malha Dry-Fit com escudo bordado. Tamanhos P ao GG.", image: "" },
+  { id: "s02", name: "Baralho personalizado", category: "Acessórios", price: 79, description: "Baralho duplo 100% plástico com arte exclusiva da temporada.", image: "" },
+  { id: "s03", name: "Copo térmico", category: "Casa", price: 89, description: "Aço inox 500ml, mantém a bebida gelada por até 8 horas.", image: "" },
+  { id: "s04", name: "Kit de fichas (300)", category: "Casa", price: 349, description: "Maleta com 300 fichas de cerâmica numeradas e 2 baralhos.", image: "" },
+  { id: "s05", name: "Boné da casa", category: "Vestuário", price: 69, description: "Aba curva, bordado dourado. Tamanho único.", image: "" },
+  { id: "s06", name: "Porta-cartas de couro", category: "Acessórios", price: 99, description: "Couro legítimo, capacidade para 2 baralhos.", image: "" }
+];
+
+/* ------------------------------------------------------------
+   TEMPORADAS ANTERIORES (resumo)
+   ------------------------------------------------------------ */
+const pastSeasons = {
+  "2026": { champion: "Rafa", points: 210 },
+  "2025": { champion: "Camila", points: 198 },
+  "2024": { champion: "Diego", points: 185 }
+};
+
+/* ------------------------------------------------------------
+   EXPORTAÇÃO (caso use módulos)
+   ------------------------------------------------------------ */
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { site, players, stagePoints, stages, shop, pastSeasons };
+}
