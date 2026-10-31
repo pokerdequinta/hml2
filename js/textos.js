@@ -181,7 +181,7 @@ window.PQ_TEXTOS = {
       "selector": ".hero__proof p",
       "mode": "html",
       "values": [
-        "<strong>16 jogadores.</strong> Uma comunidade que joga junto desde 2019."
+        "<strong>Varios Baralhoes.</strong> Baralhoes que jogam juntos desde 2015."
       ]
     },
     "highlightsEyebrow": {
@@ -202,7 +202,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-inicio .highlights .section-deck",
       "mode": "text",
       "values": [
-        "Doze noites, doze atmosferas. Passeie pelos destaques e descubra o que preparamos para cada quinta."
+        "Treze noites, treze atmosferas. Passeie pelos destaques e descubra o que preparamos para cada quinta."
       ]
     },
     "carouselHint": {
@@ -216,7 +216,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-inicio .next-stage .eyebrow",
       "mode": "text",
       "values": [
-        "Próxima parada"
+        "Próxima Etapa"
       ]
     },
     "nextFactsLabels": {
@@ -232,7 +232,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-inicio .next-stage__actions .btn",
       "mode": "text",
       "values": [
-        "Reservar minha cadeira",
+        "Reservar minha vaga",
         "Salvar calendário"
       ]
     },
@@ -264,7 +264,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-inicio .countdown-card__note",
       "mode": "text",
       "values": [
-        "Apenas 16 cadeiras. Lista de espera aberta."
+        "Apenas 20 Vagas. Confirme Sua Presença."
       ]
     },
     "statValues": {
@@ -284,14 +284,14 @@ window.PQ_TEXTOS = {
         "etapas na temporada",
         "jogadores por noite",
         "garantidos por etapa",
-        "trono em jogo"
+        "Reinado em jogo"
       ]
     },
     "homeRankEyebrow": {
       "selector": "#page-inicio .home-ranking .eyebrow",
       "mode": "text",
       "values": [
-        "A corrida pelo trono"
+        "A corrida pelo Reinado"
       ]
     },
     "homeRankTitle": {
@@ -366,7 +366,7 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Temporada 2027",
-        "São 16 lugares por noite. Garanta o seu, avise a casa e venha fazer parte da história."
+        "São 20 vagas por noite. Garanta a sua."
       ]
     },
     "ctaActions": {
