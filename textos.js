@@ -33,7 +33,7 @@ window.PQ_TEXTOS = {
       "selector": ".live-pill",
       "mode": "text",
       "values": [
-        "Temporada em jogo"
+        "Temporada em jogo 2027"
       ]
     },
     "headerNextStage": {
@@ -82,14 +82,14 @@ window.PQ_TEXTOS = {
       "selector": ".site-footer__brand > p",
       "mode": "html",
       "values": [
-        "Doze etapas. Uma mesa. Um trono.<br>Uma comunidade que joga junto desde 2019."
+        "Treze etapas. Duas mesas. Um Reinado.<br>Baralhamos Juntos desde 2015."
       ]
     },
     "footerCredit": {
       "selector": ".site-footer__credit",
       "mode": "text",
       "values": [
-        "Feito com spades, estratégia e boa companhia."
+        "Desenvolvido pelo Presida Gaspar."
       ]
     },
     "footerLegalButtons": {
@@ -152,7 +152,7 @@ window.PQ_TEXTOS = {
       "selector": ".hero .eyebrow",
       "mode": "text",
       "values": [
-        "Circuito amador · São Paulo · Desde 2019"
+        "Poker de Quinta - Temporada 2027"
       ]
     },
     "heroTitle": {
@@ -166,7 +166,7 @@ window.PQ_TEXTOS = {
       "selector": ".hero__lead",
       "mode": "text",
       "values": [
-        "Doze etapas, dezesseis jogadores e um trono. O Poker de Quinta é o ritual de toda primeira quinta do mês — com fichas, estratégia e a rivalidade saudável que só a nossa mesa tem."
+        "Treze etapas, Inúmeros Bralhões e um Reinado. O Poker de Quinta é o Melhor Home Game da cidade — com fichas, estratégia e a rivalidade saudável que só as nossas mesas tem."
       ]
     },
     "heroActions": {
@@ -181,7 +181,7 @@ window.PQ_TEXTOS = {
       "selector": ".hero__proof p",
       "mode": "html",
       "values": [
-        "<strong>16 jogadores.</strong> Uma comunidade que joga junto desde 2019."
+        "<strong>20 jogadores.</strong> Baralhões que jogam juntos desde 2015."
       ]
     },
     "highlightsEyebrow": {
