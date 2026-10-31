@@ -152,7 +152,7 @@ window.PQ_TEXTOS = {
       "selector": ".hero .eyebrow",
       "mode": "text",
       "values": [
-        "Circuito amador · São Paulo · Desde 2019"
+        "Poker de Quinta · Desde 2015"
       ]
     },
     "heroTitle": {
