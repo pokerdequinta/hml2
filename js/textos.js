@@ -82,14 +82,14 @@ window.PQ_TEXTOS = {
       "selector": ".site-footer__brand > p",
       "mode": "html",
       "values": [
-        "Doze etapas. Uma mesa. Um trono.<br>Uma comunidade que joga junto desde 2019."
+        "Treze etapas. Duas Mesas. Um Reinado.<br>Uma comunidade que joga junto desde 2015."
       ]
     },
     "footerCredit": {
       "selector": ".site-footer__credit",
       "mode": "text",
       "values": [
-        "Feito com spades, estratégia e boa companhia."
+        "Feito pelo Presida - Gapsar."
       ]
     },
     "footerLegalButtons": {
@@ -97,7 +97,7 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Privacidade",
-        "+18 · Jogo responsável"
+        ""
       ]
     },
     "footerHeadings": {
@@ -105,7 +105,7 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Navegue",
-        "A casa",
+        "O Grupo",
         "Jogue com a gente"
       ]
     },
@@ -123,7 +123,7 @@ window.PQ_TEXTOS = {
       "selector": ".site-footer__nav > div:nth-child(2) a",
       "mode": "text",
       "values": [
-        "Sobre o clube",
+        "Sobre o Grupo",
         "Loja",
         "Localização",
         "Contato"
@@ -143,7 +143,7 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Instalar o app",
-        "Jogo responsável"
+        ""
       ]
     }
   },
@@ -159,14 +159,14 @@ window.PQ_TEXTOS = {
       "selector": "#inicio-title",
       "mode": "html",
       "values": [
-        "A quinta é nossa.<br>\n              <span class=\"text-gold\">A mesa também.</span>"
+        "A quinta é nossa.<br>\n              <span class=\"text-gold\">As mesas também.</span>"
       ]
     },
     "heroLead": {
       "selector": ".hero__lead",
       "mode": "text",
       "values": [
-        "Doze etapas, dezesseis jogadores e um trono. O Poker de Quinta é o ritual de toda primeira quinta do mês — com fichas, estratégia e a rivalidade saudável que só a nossa mesa tem."
+        "Treze Etapas, Inúmeros Baralhoes e um Reinado. O Poker de Quinta é o ritual de toda Última Quinta do mês —  A melhor resenha do Poker que só a nossa turma tem."
       ]
     },
     "heroActions": {
@@ -225,7 +225,7 @@ window.PQ_TEXTOS = {
       "values": [
         "Onde",
         "Buy-in",
-        "Start"
+        "Horas"
       ]
     },
     "nextActions": {
@@ -271,9 +271,9 @@ window.PQ_TEXTOS = {
       "selector": "#page-inicio .stat strong",
       "mode": "text",
       "values": [
-        "12",
-        "16",
-        "R$ 10k",
+        "13",
+        "20",
+        "R$ 120 30 60 50",
         "1"
       ]
     },
@@ -283,7 +283,7 @@ window.PQ_TEXTOS = {
       "values": [
         "etapas na temporada",
         "jogadores por noite",
-        "garantidos por etapa",
+        "Buyin + Rebuy/Duplo + Addon",
         "Reinado em jogo"
       ]
     },
