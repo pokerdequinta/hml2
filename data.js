@@ -9,9 +9,9 @@ window.PQ_DATA = {
     season: "2027",
     tagline: "13 etapas. Duas mesas. Um Reinado.",
     description:
-      "O circuito de poker amador que transforma toda primeira quinta do mês em uma noite memorável. Temporada 2027 — Casa Palmeira, São Paulo.",
-    whatsapp: "5511999992027",
-    whatsappDisplay: "(11) 99999-2027",
+      "Treze noites, treze atmosferas. Passeie pelos destaques e descubra o que preparamos para cada quinta.. Temporada 2027 — Luck Bar - Curitiba - PR.",
+    whatsapp: "5541987210685",
+    whatsappDisplay: "(41) 987210685",
     email: "contato@pokerdequinta.com.br",
     instagramHandle: "@pokerdequinta",
     instagramUrl: "https://www.instagram.com/",
