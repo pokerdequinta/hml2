@@ -20,7 +20,7 @@ window.PQ_DATA = {
     address: "Rua Prof. Sebastião Paraná, 765",
     city: "Curitiba — PR",
     venue: "Luck Bar", // confirmar nome do local
-    mapsUrl: "", // inserir link do Google Maps do novo endereço
+    mapsUrl: "https://maps.app.goo.gl/WFMehPZUSgecsmeu8", // inserir link do Google Maps do novo endereço
     buyIn: "R$ 120",
     buyInDetail: "R$ 120 buy-in",
 
