@@ -231,7 +231,7 @@ window.PQ_DATA = {
       description:
         "A primeira mão da temporada. Mesa cheia, fichas novas e a promessa de que este ano ninguém vai dar desconto.",
       date: "2027-02-04T20:00:00-03:00",
-      status: "completed",
+      status: "upcoming",
       motif: "spade",
       rank: "A",
       suit: "♠",
@@ -250,7 +250,7 @@ window.PQ_DATA = {
       description:
         "Luz baixa, música certa e uma estrutura pensada para quem gosta de jogar no detalhe. A noite em que os ases saem do baralho — e da manga.",
       date: "2027-03-04T20:00:00-03:00",
-      status: "completed",
+      status: "upcoming",
       motif: "heart",
       rank: "A",
       suit: "♥",
@@ -382,7 +382,7 @@ window.PQ_DATA = {
       theme: "Tubarões",
       description:
         "A noite em que a casa aperta o cerco: leitura afiada, pouca conversa e cada decisão cobra o preço. A etapa mais seletiva do calendário — e a favorita de quem gosta de pressão.",
-      date: "2027-10-07T20:00:00-03:00",
+      date: "2027-01-28T20:00:00-03:00",
       status: "next",
       motif: "spade",
       rank: "A",
