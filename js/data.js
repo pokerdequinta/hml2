@@ -21,7 +21,7 @@ window.PQ_DATA = {
     city: "Curitiba — PR",
     venue: "Luck Bar",
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Rua+Harmonia+321+Vila+Madalena+Sao+Paulo",
+      "https://maps.app.goo.gl/F6QeNYMLE1PkJPiv5",
     buyIn: "R$ 120",
     buyInDetail: "R$ 120 buy-in",
     
