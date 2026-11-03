@@ -68,7 +68,7 @@ window.PQ_DATA = {
     {
       id: "p03",
       name: "Diego Souza",
-      photo: "",
+      photo: "https://github.com/pokerdequinta/fotos/blob/main/Diego.png?raw=true",
       nickname: "Diego",
       city: "Curitiba",
       uf: "PR",
