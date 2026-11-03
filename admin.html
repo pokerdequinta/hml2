@@ -3,132 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin — Poker de Quinta 2027</title>
+  <title>Administração — Poker de Quinta</title>
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    body { padding: 24px; font-family: 'Space Grotesk', sans-serif; background: #1a2e1f; color: #f8faf8; }
-    .admin-container { max-width: 1000px; margin: 0 auto; }
-    h1 { color: #e0b13a; }
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; }
-    th, td { padding: 10px; border-bottom: 1px solid rgba(212,161,33,.18); text-align: left; }
-    th { color: #f5d472; font-weight: 600; }
-    input[type="text"], input[type="url"] {
-      width: 100%; padding: 8px 10px; border-radius: 8px;
-      border: 1px solid rgba(212,161,33,.35);
-      background: #223a28; color: #f8faf8; font: inherit;
-    }
-    button {
-      padding: 10px 20px; border-radius: 999px; border: 0;
-      background: linear-gradient(135deg,#e0b13a,#f5d472);
-      color: #1a2e1f; font-weight: 600; cursor: pointer;
-      margin-top: 16px;
-    }
-    button:hover { opacity: .9; }
-    .avatar-preview { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #33503a; }
-    .actions { display: flex; gap: 8px; flex-wrap: wrap; }
-    .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #5fbf6f; color: #1a2e1f; padding: 10px 20px; border-radius: 999px; font-weight: 600; opacity: 0; transition: opacity .3s; }
-    .toast.show { opacity: 1; }
-  </style>
 </head>
-<body>
-  <div class="admin-container">
-    <h1>Admin — Jogadores</h1>
-    <p>Edite o nome e a URL da foto. As alterações são salvas no navegador (localStorage).</p>
+<body class="admin-page">
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">Poker de Quinta · Temporada 2027</p>
+        <h1>Área administrativa</h1>
+        <p>Gerencie jogadores, etapas e informações privadas da organização.</p>
+      </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Foto</th>
-          <th>Nome</th>
-          <th>URL da foto</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody id="admin-rows"></tbody>
-    </table>
+      <button class="btn btn--ghost" id="admin-logout" type="button" hidden>
+        Sair
+      </button>
+    </header>
 
-    <button id="save-all">Salvar todas as alterações</button>
-  </div>
+    <section class="admin-card" id="admin-login-card">
+      <h2>Entrar</h2>
+      <p>Somente administradores autorizados podem acessar estas informações.</p>
 
-  <div class="toast" id="toast"></div>
+      <form id="admin-login-form">
+        <label>
+          E-mail
+          <input id="admin-email" type="email" autocomplete="username" required>
+        </label>
 
-  <script>
-    // Carrega os dados padrão (ou do localStorage)
-    const STORAGE_KEY = "pq2027_players";
+        <label>
+          Senha
+          <input id="admin-password" type="password" autocomplete="current-password" required>
+        </label>
 
-    function loadPlayers() {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) return JSON.parse(stored);
-      // Fallback: usa os dados do data.js (certifique-se de que data.js está carregado)
-      return typeof players !== "undefined" ? players : [];
-    }
+        <button class="btn btn--primary" type="submit">
+          Entrar
+        </button>
 
-    function renderRows() {
-      const list = loadPlayers();
-      const tbody = document.getElementById("admin-rows");
-      tbody.innerHTML = list.map((p, i) => `
-        <tr data-index="${i}">
-          <td>${i + 1}</td>
-          <td><img class="avatar-preview" src="${p.photo || ''}" alt="" onerror="this.style.display='none'"></td>
-          <td><input type="text" class="input-name" value="${p.name.replace(/"/g, '&quot;')}"></td>
-          <td><input type="url" class="input-photo" value="${p.photo || ''}" placeholder="https://..."></td>
-          <td><button class="btn-save" data-index="${i}">Salvar</button></td>
-        </tr>
-      `).join("");
+        <p class="form-message" id="admin-login-message" role="alert"></p>
+      </form>
+    </section>
 
-      document.querySelectorAll(".btn-save").forEach(btn => {
-        btn.addEventListener("click", () => saveRow(parseInt(btn.dataset.index)));
-      });
-    }
+    <section id="admin-content" hidden>
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab is-active" type="button" data-admin-tab="config">
+          Temporada
+        </button>
 
-    function saveRow(index) {
-      const list = loadPlayers();
-      const row = document.querySelector(`tr[data-index="${index}"]`);
-      if (!row) return;
-      const name = row.querySelector(".input-name").value.trim();
-      const photo = row.querySelector(".input-photo").value.trim();
-      if (!name) { showToast("O nome não pode ficar vazio."); return; }
-      list[index].name = name;
-      list[index].photo = photo;
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
-      showToast("Jogador atualizado!");
-      renderRows(); // recarrega a tabela
-    }
+        <button class="admin-tab" type="button" data-admin-tab="player">
+          Jogadores
+        </button>
 
-    function showToast(msg) {
-      const t = document.getElementById("toast");
-      t.textContent = msg;
-      t.classList.add("show");
-      setTimeout(() => t.classList.remove("show"), 2500);
-    }
+        <button class="admin-tab" type="button" data-admin-tab="stage">
+          Etapas
+        </button>
+      </div>
 
-    document.getElementById("save-all").addEventListener("click", () => {
-      const list = loadPlayers();
-      document.querySelectorAll("tr[data-index]").forEach(row => {
-        const idx = parseInt(row.dataset.index);
-        const name = row.querySelector(".input-name").value.trim();
-        const photo = row.querySelector(".input-photo").value.trim();
-        if (name) {
-          list[idx].name = name;
-          list[idx].photo = photo;
-        }
-      });
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
-      showToast("Todas as alterações salvas!");
-    });
+      <section class="admin-panel is-active" data-admin-panel="config">
+        <div class="admin-card">
+          <h2>Configurações da temporada</h2>
 
-    document.addEventListener("DOMContentLoaded", () => {
-      // Carrega data.js para ter os dados padrão
-      if (typeof players === "undefined") {
-        const script = document.createElement("script");
-        script.src = "js/data.js";
-        script.onload = () => renderRows();
-        document.body.appendChild(script);
-      } else {
-        renderRows();
-      }
-    });
-  </script>
+          <form id="season-config-form">
+            <label>
+              Próxima etapa
+              <input id="config-next-stage" type="number" min="1" max="13" required>
+            </label>
+
+            <label>
+              Etapa do ranking atualizado
+              <input id="config-ranking-stage" type="number" min="1" max="13" required>
+            </label>
+
+            <label>
+              Data do evento
+              <input id="config-event-date" type="datetime-local">
+            </label>
+
+            <label class="checkbox-field">
+              <input id="config-open" type="checkbox">
+              Inscrições abertas
+            </label>
+
+            <button class="btn btn--primary" type="submit">
+              Salvar configurações
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="admin-panel" data-admin-panel="player" hidden>
+        <div class="admin-card">
+          <h2>Cadastro de jogador</h2>
+
+          <form id="player-form">
+            <label>
+              ID do jogador
+              <input id="player-id" type="text" placeholder="ex.: eduardo">
+            </label>
+
+            <label>
+              Nome
+              <input id="player-name" type="text" required>
+            </label>
+
+            <label>
+              Apelido
+              <input id="player-nickname" type="text">
+            </label>
+
+            <label>
+              Cidade
+              <input id="player-city" type="text">
+            </label>
+
+            <label>
+              UF
+              <input id="player-uf" type="text" maxlength="2">
+            </label>
+
+            <label>
+              Foto
+              <input id="player-photo" type="url" placeholder="https://...">
+            </label>
+
+            <label>
+              Descrição
+              <textarea id="player-bio" rows="4"></textarea>
+            </label>
+
+            <label>
+              Observações administrativas
+              <textarea id="player-notes" rows="4"></textarea>
+            </label>
+
+            <label>
+              Chave PIX
+              <input id="player-pix" type="text" autocomplete="off">
+            </label>
+
+            <button class="btn btn--primary" type="submit">
+              Salvar jogador
+            </button>
+
+            <p class="form-message" id="player-message" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="admin-panel" data-admin-panel="stage" hidden>
+        <div class="admin-card">
+          <h2>Resultado da etapa</h2>
+
+          <form id="stage-form">
+            <label>
+              Número da etapa
+              <input id="stage-id" type="number" min="1" max="13" required>
+            </label>
+
+            <label>
+              Data e horário
+              <input id="stage-date" type="datetime-local" required>
+            </label>
+
+            <label>
+              Status
+              <select id="stage-status">
+                <option value="upcoming">Em breve</option>
+                <option value="next">Próxima etapa</option>
+                <option value="completed">Concluída</option>
+                <option value="final">Grande final</option>
+              </select>
+            </label>
+
+            <label>
+              IDs dos jogadores, na ordem de classificação
+              <textarea id="stage-results" rows="4" placeholder="eduardo, joao, maria"></textarea>
+            </label>
+
+            <label>
+              Campeão da etapa — ID
+              <input id="stage-champion" type="text">
+            </label>
+
+            <label>
+              Matador de KO — ID
+              <input id="stage-ko-killer" type="text">
+            </label>
+
+            <label>
+              Mão da Etapa
+              <input id="stage-hand-of-stage" type="text" placeholder="Ex.: 7 de copas">
+            </label>
+
+            <label>
+              Vencedor da Mão da Etapa — ID
+              <input id="stage-hand-winner" type="text">
+            </label>
+
+            <label>
+              Melhor Mão da Noite — descrição
+              <input id="stage-best-hand" type="text">
+            </label>
+
+            <label>
+              Ganhador da Melhor Mão — ID
+              <input id="stage-best-hand-winner" type="text">
+            </label>
+
+            <label>
+              Ganhadores da Roleta da Sorte
+            </label>
+
+            <textarea
+              id="stage-roulette"
+              rows="5"
+              placeholder='[{"playerId":"eduardo","motivo":"perdeu-com-AA","giros":1}]'
+            ></textarea>
+
+            <label>
+              Desafio do JJ — bolha da premiação
+              <input id="stage-jj-bubble" type="text">
+            </label>
+
+            <label>
+              Resultado do Desafio do JJ
+              <select id="stage-jj-result">
+                <option value="">Não definido</option>
+                <option value="venceu">Bolha venceu</option>
+                <option value="perdeu">Bolha perdeu</option>
+              </select>
+            </label>
+
+            <label>
+              Valor acumulado para a próxima etapa
+              <input id="stage-jj-amount" type="number" min="0" step="100" value="0">
+            </label>
+
+            <button class="btn btn--primary" type="submit">
+              Salvar etapa
+            </button>
+
+            <p class="form-message" id="stage-message" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script type="module" src="js/admin.js"></script>
 </body>
 </html>
