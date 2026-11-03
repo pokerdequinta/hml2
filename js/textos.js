@@ -595,11 +595,11 @@ window.PQ_TEXTOS = {
       "selector": "#page-regulamento .rule__body",
       "mode": "html",
       "values": [
-        "<p>O Poker de Quinta é um torneio individual de No Limit Texas Hold'em, destinado a maiores de 18 anos, com 20 cadeiras por etapa. A temporada 2027 tem 12 etapas e uma Grande Final entre os oito melhores do ranking.</p>\n                <ul class=\"rule-list\">\n                  <li><strong>Stack inicial:</strong> 30.000 fichas, sem add-on.</li>\n                  <li><strong>Blinds:</strong> níveis de 20 minutos; big blind ante a partir do nível 4.</li>\n                  <li><strong>Inscrições:</strong> confirmação pelo WhatsApp. O check-in fecha às 20h15; cadeiras não confirmadas até esse horário vão para a lista de espera.</li>\n                  <li><strong>Entrada única:</strong> não há re-entry. Em caso de desistência antes da primeira mão, a vaga é oferecida à lista de espera.</li>\n                  <li><strong>Start:</strong> 20h, com portas abertas a partir das 19h.</li>\n                </ul>\n                <div class=\"rule-callout\">\n                  <svg class=\"icon\" aria-hidden=\"true\"><use href=\"#i-info\"></use></svg>\n                  <p>A casa pode ajustar a estrutura em caso de atraso excepcional, sempre informando os jogadores antes do início da primeira mão.</p>\n                </div>",
-        "<p>Os pontos são atribuídos pela posição final de cada etapa, independentemente do número de participantes. Todas as 12 etapas contam para o ranking.</p>\n                <div class=\"table-wrap\">\n                  <table class=\"points-table\">\n                    <caption>Pontuação por colocação</caption>\n                    <thead><tr><th>Colocação</th><th>Pontos</th><th>Colocação</th><th>Pontos</th></tr></thead>\n                    <tbody id=\"rules-points-body\"><tr>\n        <td>1º</td><td>650 pts</td>\n        <td>9º</td><td>100 pts</td>\n      </tr><tr>\n        <td>2º</td><td>440 pts</td>\n        <td>10º</td><td>80 pts</td>\n      </tr><tr>\n        <td>3º</td><td>330 pts</td>\n        <td>11º</td><td>65 pts</td>\n      </tr><tr>\n        <td>4º</td><td>260 pts</td>\n        <td>12º</td><td>50 pts</td>\n      </tr><tr>\n        <td>5º</td><td>210 pts</td>\n        <td>13º</td><td>30 pts</td>\n      </tr><tr>\n        <td>6º</td><td>170 pts</td>\n        <td>14º</td><td>30 pts</td>\n      </tr><tr>\n        <td>7º</td><td>140 pts</td>\n        <td>15º</td><td>30 pts</td>\n      </tr><tr>\n        <td>8º</td><td>120 pts</td>\n        <td>20º</td><td>30 pts</td>\n      </tr></tbody>\n                  </table>\n                </div>\n                <p><strong>Desempate:</strong> em caso de igualdade na pontuação, vence quem tiver mais vitórias; depois, mais mesas finais; por último, a melhor colocação na etapa mais recente disputada.</p>\n                <p><strong>Grande Final:</strong> os oito primeiros do ranking ao término da Etapa 11 disputam a final. Se um classificado não puder jogar, a vaga passa ao nono colocado, e assim por diante.</p>",
-        "<p>Cada etapa tem R$ 10.000 garantidos no prize pool, distribuídos entre os oito primeiros colocados. A premiação da Grande Final é ampliada e anunciada antes da etapa decisiva.</p>\n                <div class=\"table-wrap\">\n                  <table class=\"points-table points-table--prize\">\n                    <caption>Distribuição da premiação por etapa</caption>\n                    <thead><tr><th>Colocação</th><th>% do prize pool</th><th>Prêmio estimado</th></tr></thead>\n                    <tbody>\n                      <tr><td>1º</td><td>30%</td><td>R$ 3.000</td></tr>\n                      <tr><td>2º</td><td>20%</td><td>R$ 2.000</td></tr>\n                      <tr><td>3º</td><td>14%</td><td>R$ 1.400</td></tr>\n                      <tr><td>4º</td><td>10%</td><td>R$ 1.000</td></tr>\n                      <tr><td>5º</td><td>8%</td><td>R$ 800</td></tr>\n                      <tr><td>6º</td><td>7%</td><td>R$ 700</td></tr>\n                      <tr><td>7º</td><td>6%</td><td>R$ 600</td></tr>\n                      <tr><td>8º</td><td>5%</td><td>R$ 500</td></tr>\n                    </tbody>\n                  </table>\n                </div>\n                <div class=\"rule-callout rule-callout--gold\">\n                  <svg class=\"icon\" aria-hidden=\"true\"><use href=\"#i-trophy\"></use></svg>\n                  <p>O campeão da temporada recebe o troféu, a faixa da casa e vaga garantida na Temporada 2028.</p>\n                </div>",
-        "<p>O Poker de Quinta é uma casa de jogo entre amigos. Respeito é regra, não diferencial. A organização espera de todos a mesma postura que se espera à mesa.</p>\n                <ul class=\"rule-list\">\n                  <li>É proibido soft play, combinação de resultados, chip dumping ou qualquer forma de conluio.</li>\n                  <li>String bets e ações fora de turno recebem advertência. Reincidência pode gerar penalidade de uma órbita.</li>\n                  <li>Celulares devem ficar fora da mesa durante a mão. Não é permitido filmar ou fotografar cartas em jogo.</li>\n                  <li>“Tanking” excessivo, discussão de mão em andamento e comportamento desrespeitoso estão sujeitos a penalidade.</li>\n                  <li>A decisão final e irrecorrível é do floor da casa. O floor nunca joga na mesma mesa em que toma decisões.</li>\n                  <li>É proibido jogar sob efeito de álcool em excesso ou qualquer substância que comprometa o jogo. A casa pode vetar a entrada.</li>\n                </ul>\n                <p>Penalidades possíveis: advertência verbal, penalidade de órbita, redução de stack, desclassificação sem devolução do buy-in e, em casos graves, suspensão da temporada.</p>",
-        "<p>As cadeiras são limitadas a 20 por noite. A reserva é feita antecipadamente pelo WhatsApp da casa e confirmada pela organização. Jogadores membros têm prioridade na reserva até 72h antes de cada etapa.</p>\n                <ul class=\"rule-list\">\n                  <li><strong>Lista de espera:</strong> se a etapa estiver cheia, o jogador entra na lista e é chamado em ordem, na presença física, até o fim do nível 3.</li>\n                  <li><strong>Convidados:</strong> cada membro pode indicar um convidado por etapa. A indicação precisa ser confirmada pela organização.</li>\n                  <li><strong>Cancelamento:</strong> avise com ao menos 24h de antecedência para liberar a vaga. Faltas sem aviso podem impactar a prioridade na etapa seguinte.</li>\n                  <li><strong>Menores de 18 anos:</strong> não é permitida a participação, mesmo acompanhados.</li>\n                </ul>",
+        "<p>O Poker de Quinta é um torneio individual de No Limit Texas Hold'em, destinado a maiores de 18 anos, com 20 cadeiras por etapa. A temporada 2027 tem 13 etapas e uma Grande Final entre os oito melhores do ranking.</p>\n                <ul class=\"rule-list\">\n                  <li><strong>Stack inicial:</strong> 30.000 fichas, sem add-on.</li>\n                  <li><strong>Blinds:</strong> níveis de 20 minutos; big blind ante a partir do nível 4.</li>\n                  <li><strong>Inscrições:</strong> confirmação pelo WhatsApp. O check-in fecha às 20h15; cadeiras não confirmadas até esse horário vão para a lista de espera.</li>\n                  <li><strong>Entrada única:</strong> não há re-entry. Em caso de desistência antes da primeira mão, a vaga é oferecida à lista de espera.</li>\n                  <li><strong>Start:</strong> 20h, com portas abertas a partir das 19h.</li>\n                </ul>\n                <div class=\"rule-callout\">\n                  <svg class=\"icon\" aria-hidden=\"true\"><use href=\"#i-info\"></use></svg>\n                  <p>A casa pode ajustar a estrutura em caso de atraso excepcional, sempre informando os jogadores antes do início da primeira mão.</p>\n                </div>",
+        "<p>Os pontos são atribuídos pela posição final de cada etapa, independentemente do número de participantes. Todas as primeiras 12 etapas contam para o ranking.</p>\n                <div class=\"table-wrap\">\n                  <table class=\"points-table\">\n                    <caption>Pontuação por colocação</caption>\n                    <thead><tr><th>Colocação</th><th>Pontos</th><th>Colocação</th><th>Pontos</th></tr></thead>\n                    <tbody id=\"rules-points-body\"><tr>\n        <td>1º</td><td>650 pts</td>\n        <td>9º</td><td>100 pts</td>\n      </tr><tr>\n        <td>2º</td><td>440 pts</td>\n        <td>10º</td><td>80 pts</td>\n      </tr><tr>\n        <td>3º</td><td>330 pts</td>\n        <td>11º</td><td>65 pts</td>\n      </tr><tr>\n        <td>4º</td><td>260 pts</td>\n        <td>12º</td><td>50 pts</td>\n      </tr><tr>\n        <td>5º</td><td>210 pts</td>\n        <td>13º</td><td>30 pts</td>\n      </tr><tr>\n        <td>6º</td><td>170 pts</td>\n        <td>14º</td><td>30 pts</td>\n      </tr><tr>\n        <td>7º</td><td>140 pts</td>\n        <td>15º</td><td>30 pts</td>\n      </tr><tr>\n        <td>8º</td><td>120 pts</td>\n        <td>20º</td><td>30 pts</td>\n      </tr></tbody>\n                  </table>\n                </div>\n                <p><strong>Desempate:</strong> em caso de igualdade na pontuação, vence quem tiver mais vitórias; depois, mais mesas finais; por último, a melhor colocação na etapa mais recente disputada.</p>\n                <p><strong>Grande Final:</strong> os oito primeiros do ranking ao término da Etapa 11 disputam a final. Se um classificado não puder jogar, a vaga passa ao nono colocado, e assim por diante.</p>",
+        "<p>Cada etapa tem o dinheiro arreacadado e, distribuídos entre os cinco primeiros colocados. A premiação da Grande Final é ampliada e anunciada antes da etapa decisiva.</p>\n                <div class=\"table-wrap\">\n                  <table class=\"points-table points-table--prize\">\n                    <caption>Distribuição da premiação por etapa</caption>\n                    <thead><tr><th>Colocação</th><th>% do prize pool</th><th>Prêmio estimado</th></tr></thead>\n                    <tbody>\n                      <tr><td>1º</td><td>30%</td><td>R$ 3.000</td></tr>\n                      <tr><td>2º</td><td>20%</td><td>R$ 2.000</td></tr>\n                      <tr><td>3º</td><td>14%</td><td>R$ 1.400</td></tr>\n                      <tr><td>4º</td><td>10%</td><td>R$ 1.000</td></tr>\n                      <tr><td>5º</td><td>8%</td><td>R$ 800</td></tr>\n                      <tr><td>6º</td><td>7%</td><td>R$ 700</td></tr>\n                      <tr><td>7º</td><td>6%</td><td>R$ 600</td></tr>\n                      <tr><td>8º</td><td>5%</td><td>R$ 500</td></tr>\n                    </tbody>\n                  </table>\n                </div>\n                <div class=\"rule-callout rule-callout--gold\">\n                  <svg class=\"icon\" aria-hidden=\"true\"><use href=\"#i-trophy\"></use></svg>\n                  <p>O campeão da temporada recebe o troféu, a faixa da casa e vaga garantida na Temporada 2028.</p>\n                </div>",
+        "<p>O Poker de Quinta é uma de jogo entre amigos. Respeito é regra, não diferencial. A organização espera de todos a mesma postura que se espera à mesa.</p>\n                <ul class=\"rule-list\">\n                  <li>É proibido soft play, combinação de resultados, chip dumping ou qualquer forma de conluio.</li>\n                  <li>String bets e ações fora de turno recebem advertência. Reincidência pode gerar penalidade de uma órbita.</li>\n                  <li>Celulares devem ficar fora da mesa durante a mão. Não é permitido filmar ou fotografar cartas em jogo.</li>\n                  <li>“Tanking” excessivo, discussão de mão em andamento e comportamento desrespeitoso estão sujeitos a penalidade.</li>\n                  <li>A decisão final e irrecorrível é do floor da casa. O floor nunca joga na mesma mesa em que toma decisões.</li>\n                  <li>É proibido jogar sob efeito de álcool em excesso ou qualquer substância que comprometa o jogo. A casa pode vetar a entrada.</li>\n                </ul>\n                <p>Penalidades possíveis: advertência verbal, penalidade de órbita, redução de stack, desclassificação sem devolução do buy-in e, em casos graves, suspensão da temporada.</p>",
+        "<p>As Inscriçoes são limitadas a 20 lugares por noite. A reserva é feita antecipadamente pelo site oficial do Poker de Quinta e confirmada pela organização. Jogadores membros têm prioridade na reserva até 72h antes de cada etapa.</p>\n                <ul class=\"rule-list\">\n                  <li><strong>Lista de espera:</strong> se a etapa estiver cheia, o jogador entra na lista e é chamado em ordem, na presença física, até o fim do nível 3.</li>\n                  <li><strong>Convidados:</strong> cada membro pode indicar um convidado por etapa. A indicação precisa ser confirmada pela organização.</li>\n                  <li><strong>Cancelamento:</strong> avise com ao menos 24h de antecedência para liberar a vaga. Faltas sem aviso podem impactar a prioridade na etapa seguinte.</li>\n                  <li><strong>Menores de 18 anos:</strong> não é permitida a participação, mesmo acompanhados.</li>\n                </ul>",
         "<p>Os dados informados no cadastro e na lista de presença são usados apenas para organização do torneio, comunicação de etapas e gestão do ranking. Não vendemos nem compartilhamos seus dados com terceiros para fins comerciais.</p>\n                <p>Fotos e vídeos do evento podem ser publicados nas redes da casa. Ao frequentar o evento, o participante autoriza o uso de sua imagem em conteúdo editorial não publicitário. Para solicitar remoção, fale com a organização.</p>\n                <p>Você pode solicitar acesso, correção ou exclusão dos seus dados pelo e-mail <a href=\"mailto:contato@pokerdequinta.com.br\">contato@pokerdequinta.com.br</a>.</p>"
       ]
     },
@@ -903,14 +903,14 @@ window.PQ_TEXTOS = {
       "selector": "#page-localizacao .map-card__footer strong",
       "mode": "text",
       "values": [
-        "Rua Harmonia, 321 — Vila Madalena"
+        "Rua Prof Sebastião Paraná 765 - Vila Izabel - Curitiba PR"
       ]
     },
     "mapCity": {
       "selector": "#page-localizacao .map-card__footer span:last-child",
       "mode": "text",
       "values": [
-        "São Paulo — SP · CEP 05435-000"
+        "Curitiba — PR · CEP 80320-070"
       ]
     },
     "cardTitles": {
@@ -919,7 +919,7 @@ window.PQ_TEXTOS = {
       "values": [
         "Horários",
         "Como chegar",
-        "Na porta",
+        "",
         "Vista-se para a casa"
       ]
     },
@@ -927,10 +927,10 @@ window.PQ_TEXTOS = {
       "selector": "#page-localizacao .location-card p",
       "mode": "text",
       "values": [
-        "Portas abrem às 19h. O torneio começa impreterivelmente às 20h. O check-in encerra às 20h15.",
-        "Metrô Vila Madalena (650 m a pé). Estacionamento conveniado na Rua Fidalga, 180, com vagas limitadas.",
-        "Apresente seu nome na recepção. Não é necessário imprimir nada — a lista é conferida na entrada.",
-        "Traje esporte fino casual. Sem bonés à mesa. A casa oferece água, café e um drink de boas-vindas."
+        "Chegue cedo, garanta seu Bonus e venha para resenha jogar uma locurinha ou uma aposta de corrida de cavalo. O torneio começa impreterivelmente às 20h.",
+        "Tem vaga na frente do Luck, se chegar cedo.",
+        "Apresente seu ticket ao delaer antes das 20h e ganhe 3K de Bonus.",
+        "Não esqueca de pagar sua conta no Luck."
       ]
     },
     "ctaEyebrow": {
@@ -951,7 +951,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-localizacao .location-cta .btn",
       "mode": "text",
       "values": [
-        "Falar com a casa"
+        "Fale com o Presida"
       ]
     }
   },
@@ -960,21 +960,21 @@ window.PQ_TEXTOS = {
       "selector": "#page-sobre .page-heading .eyebrow",
       "mode": "text",
       "values": [
-        "Desde 2019"
+        "Desde 2015"
       ]
     },
     "title": {
       "selector": "#sobre-title",
       "mode": "html",
       "values": [
-        "Uma casa construída<br><span class=\"text-gold\">em volta de uma mesa.</span>"
+        "Um Home Game construído<br><span class=\"text-gold\">em volta de uma mesa.</span>"
       ]
     },
     "deck": {
       "selector": "#page-sobre .page-deck",
       "mode": "text",
       "values": [
-        "O Poker de Quinta nasceu de um grupo de amigos que queria jogar sério sem perder a leveza. Oito anos depois, virou tradição."
+        "O Poker de Quinta nasceu de um grupo de amigos que queria tomar uma cerveja e dar uma baralhada sem perder a leveza. 11 anos depois, virou tradição."
       ]
     },
     "paragraphs": {
@@ -982,15 +982,15 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "A gente acredita que poker é, antes de tudo, um encontro. É a pausa da semana, o olhar atravessado, a piada que só quem estava na mesa entende.",
-        "Em 2019, éramos oito pessoas, uma mesa dobrável e um baralho que já tinha visto dias melhores. A regra era simples: jogar com respeito, sem pressa e com vontade de voltar na semana seguinte. O nome veio fácil — a quinta era o único dia em que todo mundo conseguia.",
-        "Hoje a casa tem 20 cadeiras, um ranking oficial, uma temporada inteira e uma comunidade que cresceu junto. Mas a essência não mudou: uma noite por mês, uma mesa, e a certeza de que o importante é jogar bem — e receber melhor."
+        "Em 2015, éramos cinco pessoas, fichas do paraguai e um baralho que já tinha visto dias melhores. A regra era simples: jogar com respeito, sem pressa e com vontade de voltar na semana seguinte. O nome veio fácil — a quinta era o único dia em que todo mundo conseguia.",
+        "Hoje nosso home game tem 20 cadeiras, um ranking oficial, uma temporada inteira e uma comunidade que cresceu junto. Mas a essência não mudou: uma noite por mês, duas mesas, e a certeza de que o importante é jogar bem — e receber melhor."
       ]
     },
     "caption": {
       "selector": "#page-sobre .about-visual__caption",
       "mode": "text",
       "values": [
-        "“Toda primeira quinta tem uma nova história.”"
+        "“Toda Última quinta tem uma nova história.”"
       ]
     },
     "statValues": {
@@ -1041,8 +1041,8 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Sem arrogância, sem clima pesado. A rivalidade fica nas fichas e termina no abraço depois do showdown.",
-        "Regras claras, floor presente e tolerância zero a conluio. Aqui, vencer sem integridade não é vencer.",
-        "Uma cadeira é um convite para fazer parte. A casa cresce devagar, de propósito, para continuar sendo casa."
+        "Regras claras, O Dealer decide e tolerância zero a conluio. Aqui, vencer sem integridade não é vencer.",
+        "Uma cadeira é um convite para fazer parte. O nosso home game cresce devagar, de propósito, para continuar sendo casa de todos."
       ]
     },
     "timelineEyebrow": {
@@ -1073,10 +1073,10 @@ window.PQ_TEXTOS = {
       "selector": "#page-sobre .milestones p",
       "mode": "text",
       "values": [
-        "Oito amigos, uma mesa dobrável e a primeira quinta oficial. O nome nasceu antes das regras.",
-        "O ranking ganhou forma, as etapas viraram calendário e a casa passou a ter 12 cadeiras.",
-        "A temporada mais disputada até então consagrou Rafa e colocou a casa no mapa do circuito amador.",
-        "20 cadeiras, 12 etapas, R$ 120 mil em jogo e uma comunidade que nunca esteve tão perto."
+        "Cinco amigos, uma mesa de sinuca e a primeira quinta oficial. O nome nasceu antes das regras.",
+        "O ranking ganhou forma, as etapas viraram calendário e o Tatu passou a ser nossa casa",
+        "A temporada mais disputada até então consagrou Robson como o mais baralhao de todos.",
+       
       ]
     },
     "ctaEyebrow": {
@@ -1098,7 +1098,7 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Faça parte",
-        "A casa abre as portas toda primeira quinta do mês. Se você joga com respeito e vontade, já tem lugar."
+        "A Nossa turma abre as portas toda Ultima quinta do mês. Se você joga com respeito e vontade, já tem lugar."
       ]
     },
     "ctaActions": {
@@ -1106,7 +1106,7 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Quero jogar",
-        "Falar com a casa"
+        "Falar com o Presida"
       ]
     }
   },
@@ -1115,7 +1115,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-contato .page-heading .eyebrow",
       "mode": "text",
       "values": [
-        "Fale com a casa"
+        "Fale com o Presida"
       ]
     },
     "title": {
@@ -1129,7 +1129,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-contato .page-deck",
       "mode": "text",
       "values": [
-        "Reservas, dúvidas, patrocínios ou só um oi. Escolha o canal e a gente responde."
+        , dúvidas, patrocínios ou só um oi. Escolha o canal e a gente responde."
       ]
     },
     "formEyebrow": {
@@ -1160,7 +1160,7 @@ window.PQ_TEXTOS = {
       "selector": "#contact-name, #contact-email, #contact-message",
       "mode": "placeholder",
       "values": [
-        "Como podemos te chamar?",
+        "Como podemos te chamar seu Baralhão?",
         "voce@email.com",
         "Conte um pouco mais..."
       ]
@@ -1222,7 +1222,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-contato .contact-channel strong",
       "mode": "text",
       "values": [
-        "(11) 99999-2027",
+        "(41) 98721-0685",
         "contato@pokerdequinta.com.br",
         "@pokerdequinta"
       ]
