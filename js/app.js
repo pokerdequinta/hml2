@@ -405,7 +405,7 @@
         <div class="stage-slide__facts">
           <div class="stage-fact"><span>Buy-in</span><strong>${escapeHTML(DATA.site.buyIn)}</strong></div>
           <div class="stage-fact"><span>Início</span><strong>${timeLabel(stage.date)}</strong></div>
-          <div class="stage-fact"><span>Formato</span><strong>${stage.status === "final" ? "Top 8 da temporada" : "16 lugares · NLHE"}</strong></div>
+          <div class="stage-fact"><span>Formato</span><strong>${stage.status === "final" ? "Top 8 da temporada" : "20 lugares · NLHE"}</strong></div>
         </div>
         <div class="stage-slide__actions">${actionMarkup}</div>
       </div>
@@ -1173,7 +1173,7 @@
           </div>`
         : `<div class="timeline-result">
             <span>${icon(stage.status === "final" ? "trophy" : "calendar")} ${stage.status === "final" ? "Top 8 da temporada" : "Inscrições abertas para membros e convidados"}</span>
-            <span>${icon("users")} ${stage.status === "final" ? "8 classificados" : "16 lugares"}</span>
+            <span>${icon("users")} ${stage.status === "final" ? "8 classificados" : "20 lugares"}</span>
             <span>${icon("ticket")} ${formatCurrency(stage.prizePool)} garantidos</span>
           </div>`;
 
