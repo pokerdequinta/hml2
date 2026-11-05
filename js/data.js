@@ -49,7 +49,7 @@ window.PQ_DATA = {
       photo: "https://github.com/pokerdequinta/fotos/blob/main/Gaspar.png?raw=true",
       nickname: "Gaspar",
       city: "Presidente do Poker de Quinta",
-      uf: "PR",
+      uf: "",
       since: 2015,
       bio: "Fundador do Poker de Quinta, idealizador disso tudo aqui. Joga muito.",
       best: "Campeão da Temporada 2025",
@@ -60,7 +60,7 @@ window.PQ_DATA = {
       photo: "https://github.com/pokerdequinta/fotos/blob/main/Matheus.png?raw=true",
       nickname: "Matheus",
       city: "CFO do Poker de Quinta",
-      uf: "PR",
+      uf: "",
       since: 2017,
       bio: "Um dos mais importantes do Poker de Quinta. Gosta de potes grandes, decisões difíceis e de um bom bluff no river.",
       best: "Campeão da Temporada 2024",
@@ -71,7 +71,7 @@ window.PQ_DATA = {
       photo: "https://github.com/pokerdequinta/fotos/blob/main/Diego.png?raw=true",
       nickname: "Diego",
       city: "Vice Presidente do Poker de Quinta",
-      uf: "PR",
+      uf: "",
       since: 2015,
       bio: "Fundador do Poker de Quinta, atleticano raiz, gosta de jogar com um par de véio.",
       best: "Inúmeras Mesas Finais",
@@ -466,7 +466,7 @@ window.PQ_DATA = {
   ],
 
   /* Temporadas anteriores: vazio até você enviar dados confirmados. */
-  pastSeasons: [],
+  pastSeasons: [2024],
 
   shop: [
     {
