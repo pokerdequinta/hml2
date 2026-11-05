@@ -20,7 +20,7 @@
     confirmar: "Confirmação de presença — Poker de Quinta",
     loja: "Loja — Poker de Quinta",
     localizacao: "Localização — Poker de Quinta",
-    sobre: "Sobre o clube — Poker de Quinta",
+    sobre: "Sobre o Poker de Quinta",
     contato: "Contato — Poker de Quinta",
   };
   const WA_NUMBER = DATA.site.whatsapp;
