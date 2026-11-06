@@ -219,7 +219,7 @@ window.PQ_DATA = {
       bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
       best: "",
     },
-  ],
+    {
       id: "p17",
       name: "Nando Castro",
       photo: "",
@@ -229,8 +229,8 @@ window.PQ_DATA = {
       since: 2021,
       bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
       best: "",
-    },
-  ],
+    }
+    {
          id: "p18",
       name: "Nando Castro",
       photo: "",
@@ -240,8 +240,8 @@ window.PQ_DATA = {
       since: 2021,
       bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
       best: "",
-    },
-  ],
+    }
+    {
          id: "p19",
       name: "Nando Castro",
       photo: "",
@@ -251,8 +251,8 @@ window.PQ_DATA = {
       since: 2021,
       bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
       best: "",
-    },
-  ],
+    }
+    {
          id: "p20",
       name: "Nando Castro",
       photo: "",
@@ -262,8 +262,8 @@ window.PQ_DATA = {
       since: 2021,
       bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
       best: "",
-    },
-  ],
+    }
+    {
          id: "p21",
       name: "Nando Castro",
       photo: "",
@@ -273,8 +273,8 @@ window.PQ_DATA = {
       since: 2021,
       bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
       best: "",
-    },
-  ],
+    }
+    {
          id: "p22",
       name: "Nando Castro",
       photo: "",
@@ -284,8 +284,8 @@ window.PQ_DATA = {
       since: 2021,
       bio: "Um dos rostos da casa. Nando traz a energia da mesa e nunca deixa uma etapa passar em branco.",
       best: "",
-    },
-  ],
+    }
+    {
          id: "p23",
       name: "Nando Castro",
       photo: "",
