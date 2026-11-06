@@ -1295,16 +1295,58 @@
           <path d="M88 62v10" stroke="${light}" stroke-opacity=".45" stroke-linecap="round"/>
         </svg>`;
       case "poster":
-        return `<svg ${common}>
-          <rect x="50" y="30" width="120" height="160" rx="3" fill="${cream}" stroke="${gold}" stroke-width="2"/>
-          <rect x="58" y="38" width="104" height="144" fill="none" stroke="${gold}" stroke-opacity=".4"/>
-          <text x="67" y="62" fill="${darkGreen}" font-family="Georgia, serif" font-size="23" font-weight="700">Q</text>
-          <text x="67" y="81" fill="${darkGreen}" font-family="Georgia, serif" font-size="17">♠</text>
-          <path d="M110 95c-2 10-22 18-22 34 0 13 13 17 22 8 9 9 22 5 22-8 0-16-20-24-22-34Z" fill="${gold}"/>
-          <path d="M110 132c-1 9-5 15-11 21h22c-6-6-10-12-11-21Z" fill="${gold}"/>
-          <line x1="71" y1="165" x2="149" y2="165" stroke="${gold}" stroke-opacity=".6"/>
-          <text x="110" y="177" text-anchor="middle" fill="${darkGreen}" font-family="Space Grotesk, sans-serif" font-size="7.5" letter-spacing="3">TEMPORADA 2027</text>
-        </svg>`;
+  return `<svg ${common}>
+    <!-- Moldura do poster (mantida) -->
+    <rect x="50" y="30" width="120" height="160" rx="3" fill="${cream}" stroke="${gold}" stroke-width="2"/>
+    <rect x="58" y="38" width="104" height="144" fill="none" stroke="${gold}" stroke-opacity=".4"/>
+
+    <!-- Sombra no chão -->
+    <ellipse cx="110" cy="163" rx="38" ry="2.5" fill="${darkGreen}" opacity=".18"/>
+
+    <!-- Tampa do pote -->
+    <rect x="80" y="48" width="60" height="14" rx="3" fill="${gold}"/>
+    <line x1="84" y1="55" x2="136" y2="55" stroke="${cream}" stroke-opacity=".55" stroke-width="1"/>
+    <rect x="84" y="62" width="52" height="4" fill="${gold}" stroke="${darkGreen}" stroke-opacity=".3" stroke-width=".5"/>
+
+    <!-- Corpo de vidro do pote -->
+    <path d="M 88 66
+             L 88 70
+             C 88 77 72 80 72 90
+             L 72 150
+             C 72 158 78 162 86 162
+             L 134 162
+             C 142 162 148 158 148 150
+             L 148 90
+             C 148 80 132 77 132 70
+             L 132 66 Z"
+          fill="${cream}" stroke="${gold}" stroke-width="2"/>
+
+    <!-- Conteúdo visto através do vidro -->
+    <circle cx="90"  cy="146" r="9"  fill="${gold}" opacity=".5"/>
+    <circle cx="110" cy="149" r="11" fill="${gold}" opacity=".5"/>
+    <circle cx="130" cy="146" r="8"  fill="${gold}" opacity=".5"/>
+    <circle cx="100" cy="138" r="7"  fill="${gold}" opacity=".35"/>
+
+    <!-- Nível do líquido -->
+    <path d="M 74 132 Q 110 128 146 132" fill="none" stroke="${gold}" stroke-opacity=".35" stroke-width="1"/>
+
+    <!-- Rótulo colado no vidro -->
+    <rect x="84" y="92" width="52" height="30" rx="2" fill="${cream}" stroke="${darkGreen}" stroke-width="1.2"/>
+    <text x="110" y="105" text-anchor="middle" fill="${darkGreen}"
+          font-family="Georgia, serif" font-size="9" font-weight="700">CONSERVA</text>
+    <line x1="92" y1="109" x2="128" y2="109" stroke="${darkGreen}" stroke-opacity=".4" stroke-width=".6"/>
+    <text x="110" y="117" text-anchor="middle" fill="${darkGreen}"
+          font-family="Space Grotesk, sans-serif" font-size="5.5" letter-spacing="1.5">ARTESANAL</text>
+
+    <!-- Reflexos do vidro -->
+    <path d="M 76 92 L 76 148"  stroke="${cream}" stroke-opacity=".75" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 144 98 L 144 142" stroke="${cream}" stroke-opacity=".4"  stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Rodapé (igual ao original) -->
+    <line x1="71" y1="170" x2="149" y2="170" stroke="${gold}" stroke-opacity=".6"/>
+    <text x="110" y="178" text-anchor="middle" fill="${darkGreen}"
+          font-family="Space Grotesk, sans-serif" font-size="7.5" letter-spacing="3">TEMPORADA 2027</text>
+  </svg>`;
       case "bag":
         return `<svg ${common}>
           <path d="M54 83h112l-9 100H63L54 83Z" fill="${green}" stroke="${gold}" stroke-width="2.2" stroke-linejoin="round"/>
@@ -2452,7 +2494,7 @@
     // Preenche o ano no rodapé caso o HTML seja aberto em outro contexto.
     const cartNote = $(".cart-note");
     if (cartNote) {
-      cartNote.textContent = "Frete e disponibilidade confirmados no atendimento. Retirada gratuita na Casa Palmeira.";
+      cartNote.textContent = "Frete Gratis Retire no Luck na próxima etapa.";
     }
   }
 
