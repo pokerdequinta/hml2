@@ -319,7 +319,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-inicio .experience .eyebrow",
       "mode": "text",
       "values": [
-        "O ritual da casa"
+        "O ritual do Poker de Quinta"
       ]
     },
     "experienceTitle": {
@@ -342,7 +342,7 @@ window.PQ_TEXTOS = {
       "selector": "#page-inicio .feature-card p",
       "mode": "text",
       "values": [
-        "30.000 fichas iniciais, níveis de 20 minutos e uma mesa que recompensa decisão — não sorte.",
+        "15.000 fichas iniciais, níveis de 15/12/10 minutos e duas mesas que recompensa decisão — não sorte.",
         "Uma casa, uma mesa e gente que joga junto há anos. Aqui todo mundo sabe o seu nome — e o seu estilo.",
         "Pontos, desempates e uma final entre os oito melhores. O título da temporada é conquistado, não sorteado."
       ]
