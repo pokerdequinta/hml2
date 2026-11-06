@@ -1222,8 +1222,8 @@ window.PQ_TEXTOS = {
       "selector": "#page-contato .contact-channel strong",
       "mode": "text",
       "values": [
-        "(11) 99999-2027",
-        "contato@pokerdequinta.com.br",
+        "(41) 98721-0685",
+        "eduardoclinhares@gmail.com",
         "@pokerdequinta"
       ]
     },
@@ -1293,9 +1293,9 @@ window.PQ_TEXTOS = {
       "mode": "text",
       "values": [
         "Não. A casa recebe jogadores de todos os níveis, do iniciante ao experiente. O importante é conhecer as regras básicas e jogar com respeito. Antes da primeira mão, a organização faz um rápido alinhamento de etiqueta.",
-        "Envie uma mensagem pelo WhatsApp. A organização confirma a disponibilidade e registra seu nome. A cadeira fica garantida até as 20h15; depois disso, pode ser liberada para a lista de espera.",
+        "Envie uma mensagem pelo WhatsApp pro Presida. Ele confirma a disponibilidade e registra seu nome.",
         "Sim. Cada membro pode indicar um convidado por etapa, desde que haja vaga. A indicação precisa ser confirmada pela organização antes da noite do jogo.",
-        "O buy-in de R$ 650 inclui R$ 600 para o prize pool e R$ 50 de taxa da casa. Água, café e o drink de boas-vindas estão inclusos. A premiação garante R$ 10.000 por etapa."
+        "O buy-in de R$ 120 inclui R$50 do buyin R$45 da janta e mais R$25 da taxa de limpeza."
       ]
     }
   },
@@ -1315,7 +1315,7 @@ window.PQ_TEXTOS = {
         "Confirmar presença",
         "Loja",
         "Localização",
-        "Sobre o clube",
+        "Sobre o Poker de Quinta",
         "Contato"
       ]
     },
